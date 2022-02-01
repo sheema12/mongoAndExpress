@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Mongo DB</title>
+        <style>
+            header{
+                text-align:center;
+                border-bottom: 5px ridge #aaa;
+                background: blue;
+                color: white;
+                padding:0;
+                margin:0;
+            }
+            body{
+                padding:0;
+                margin:0;
+                background: orange;
+                text-align: center;
+            }
+            .form{
+                display:inline-block;
+                max-width:25%;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <header><br><h1>MONGO DB FROM EXPRESS JS</h1></header><br><br>
+        <div class="form">
+            <h1>ADD</h1>
+            <form action="/add" method="POST">
+                <label>id</label><br>
+                <input type="text" name="id" required><br><br>
+                <label>Name</label><br>
+                <input type="text" name="name" required><br><br>
+                <label>Designation</label><br>
+                <input type="text" name="designation" required><br><br>
+                <label>Dept id</label><br>
+                <input type="text" name="dept" required><br><br><br>
+                <input type="submit" value="Add record">
+            </form>
+        </div>
+
+        &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;
+        &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;
+
+        <div class="form">
+            <h1>VIEW</h1>
+            <form action="/view" method="POST">
+                <label>id</label><br>
+                <input type="text" name="id"><br><br>
+                <label>Name</label><br>
+                <input type="text" name="name"><br><br>
+                <label>Designation</label><br>
+                <input type="text" name="designation"><br><br>
+                <label>Dept id</label><br>
+                <input type="text" name="dept"><br><br><br>
+                <input type="submit" value="View record">
+            </form>
+        </div>
+
+        &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;
+        &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;
+
+        <div class="form">
+            <h1>DELETE</h1>
+            <form action="/delete" method="POST">
+                <label>id</label><br>
+                <input type="text" name="id"><br><br>
+                <label>Name</label><br>
+                <input type="text" name="name"><br><br>
+                <label>Designation</label><br>
+                <input type="text" name="designation"><br><br>
+                <label>Dept id</label><br>
+                <input type="text" name="dept"><br><br><br>
+                <input type="submit" value="Delete record">
+            </form>
+        </div>
+
+        &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;
+        &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;
+
+        <div class="form">
+            <h1>UPDATE</h1>
+            <form action="/update" method="POST">
+                <div class="form">
+                    <label>id</label><br>
+                    <input type="text" name="fid" placeholder="find id">
+                    <br><br>
+                    <label>Name</label><br>
+                    <input type="text" name="fname" placeholder="find name">
+                    <br><br>
+                    <label>Designation</label><br>
+                    <input type="text" name="fdesignation" 
+                            placeholder="find designation">
+                    <br><br>
+                    <label>Dept id</label><br>
+                    <input type="text" name="fdept" placeholder="find dept">
+                    <br><br><br>
+                </div>
+                &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;
+                &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;
+                &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;
+                <div class="form">
+                    <label>id</label><br>
+                    <input type="text" name="rid" placeholder="replace id">
+                    <br><br>
+                    <label>Name</label><br>
+                    <input type="text" name="rname" placeholder="replace name">
+                    <br><br>
+                    <label>Designation</label><br>
+                    <input type="text" name="rdesignation" 
+                        placeholder="replace designation"><br><br>
+                    <label>Dept id</label><br>
+                    <input type="text" name="rdept" placeholder="replace dept">
+                    <br><br><br>
+                </div>
+                <input type="submit" value="Update record">
+            </form>
+        </div>
+
+    </body>
+</html>
